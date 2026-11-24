@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Compila il Modulo</title>
+</head>
+<body>
+    <h2>Ciao {{ user.username }}, compila i dati:</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Invia Risposte</button>
+    </form>
+</body>
+</html>

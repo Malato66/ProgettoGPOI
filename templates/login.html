@@ -6,6 +6,7 @@
 </head>
 <body>
     <h2>Accedi al tuo account</h2>
+    <p>Non hai ancora un account? <a href="{% url 'registrazione' %}">Registrati</a></p>
 
     {% if form.errors %}
         <p style="color: red;">Username o password non validi. Riprova.</p>

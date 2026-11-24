@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_REDIRECT_URL = '/admin/'  # Oppure '/' se hai già una homepage
+LOGIN_REDIRECT_URL = '/modulo/'
 LOGOUT_REDIRECT_URL = '/login/'
+
 
 # Application definition
 
