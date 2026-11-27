@@ -9,7 +9,10 @@ Progetto gpoi
 - Inizializzazione del database: python manage.py migrate
 - Creazione dell'utente 'admin': python manage.py createsuperuser admin
 - Configurazione dei file di sistema: urls.py, settings.py
-- Creazione dei template personalizzati: templates/login.html
+- Creazione dei template personalizzati: templates/login.html/modulo.html/registrazione.html/   
+  conferma.html/index.html
+- Creazione del database di archiviazzione utenti associato a risposte form
+
 
 
 - Per ricreare il virtualenviroment:

@@ -5,6 +5,21 @@
     <title>La mia App</title>
 </head>
 <body>
-    <h1>Benvenuto nella pagina dell'app</h1>
+    {% if user.is_authenticated %}
+        <h1>Bentornato, {{ user.username }}!</h1>
+
+        <a href="{% url 'compila_modulo' %}">compila il form</a>
+        
+        <!-- Area riservata agli utenti loggati -->
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">LogOut</button>
+        </form>
+    {% else %}
+        <h1>Benvenuto ospite</h1>
+        <p>Accedi per vedere i contenuti personalizzati.</p>
+        
+        <a href="{% url 'login' %}">Accedi</a>
+    {% endif %}
 </body>
 </html>
